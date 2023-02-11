@@ -151,6 +151,9 @@ header {
     justify-content: center;
     align-items: center;
 }
+.social:hover{
+    border: 1px solid #D3B47F;
+}
 
 .social {
     border: 1px solid #FFFFFF;
