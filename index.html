@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -20,14 +21,33 @@
 </head>
 <body>
 <header class="kenburns-top-right">
+
     <menu class="menu__header container">
         <img class="menu__header__img" src="images/header/logoWhite.png" alt="logo">
-        <ul>
+        <ul class="menu__header-menu">
             <li><a href="#">À la carte</a></li>
             <li><a href="#">Wijnkaart</a></li>
             <li><a href="#">Lunchmenu</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <!-- Simulate a smartphone / tablet -->
+
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+
+            <img class="navBtn" src="images/header/navBtn.svg">
+
+            <div class="myLinks">
+                <a href="#">À la carte</a>
+                <a href="#">Wijnkaart</a>
+                <a href="#">Lunchmenu</a>
+                <a href="#">Contact</a>
+            </div>
+
+        </div>
+
+
         <form id="form" class="registration" action="#">
             <div class="registration__container">
                 <div class="header__form">
@@ -290,7 +310,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="footer__list__img">
+                            <div class="footer__list__img clock">
 
                                 <img src="images/footer/clock.svg" alt="photo">
                             </div>
@@ -300,7 +320,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="footer__list__img">
+                            <div class="footer__list__img addr">
 
                                 <img src="images/footer/address.svg" alt="photo">
                             </div>
@@ -357,12 +377,34 @@
         </div>
     </section>
 </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
+<script>
+
+     document.querySelector(".navBtn").addEventListener("click", myFunction);
+
+    function myFunction() {
+        let menuHeader = document.querySelector(".menu__header");
+        let getMyLinks = document.querySelector(".myLinks");
+        if (getMyLinks.style.display !== "block") {
+            getMyLinks.style.display = "block";
+            menuHeader.style.height = "0px"
+            menuHeader.style.marginBottom = "150px"
+
+        } else {
+            getMyLinks.style.display = "none"
+            menuHeader.style.height = "25px"
+            menuHeader.style.marginBottom = "50px"
+        }
+    }
+
+</script>
 
 </body>
 </html>
