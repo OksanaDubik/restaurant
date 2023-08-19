@@ -1,15 +1,13 @@
 //слайдер
 let swiper = new Swiper(".mySwiper", {
 
-    slidesPerView: 3,
+    slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-
     },
-
 });
 
 
@@ -46,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let result = await response.json();
                 alert(result.message);
                 form.reset();
-            }else {
+            } else {
                 alert('error')
             }
         } else {
@@ -79,5 +77,4 @@ document.addEventListener('DOMContentLoaded', function () {
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
     }
-
 });
