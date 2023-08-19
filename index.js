@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
         input.parentElement.classList.add('_error');
         input.classList.add('_error');
     }
-
     function formRemoveError(input) {
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
