@@ -20,83 +20,81 @@
     <title>t`zeezotje</title>
 </head>
 <body>
+
 <header class="kenburns-top-right">
+    <div class="kenburns-top__header">
+        <menu id="upMenu" class="menu__header container">
+            <img class="menu__header__img" src="images/header/logoWhite.png" alt="logo">
+            <ul class="menu__header-menu">
+                <li><a href="#mainMap">À la carte</a></li>
+                <li><a href="wijnkaart.html">Wijnkaart</a></li>
+                <li><a href="lunchmenu.html">Lunchmenu</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
 
-    <menu class="menu__header container">
-        <img class="menu__header__img" src="images/header/logoWhite.png" alt="logo">
-        <ul class="menu__header-menu">
-            <li><a href="#">À la carte</a></li>
-            <li><a href="#">Wijnkaart</a></li>
-            <li><a href="#">Lunchmenu</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <!-- Simulate a smartphone / tablet -->
-
-
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-
-            <img class="navBtn" src="images/header/navBtn.svg">
-
-            <div class="myLinks">
-                <a href="#">À la carte</a>
-                <a href="#">Wijnkaart</a>
-                <a href="#">Lunchmenu</a>
-                <a href="#">Contact</a>
+            <div class="topnav">
+                <img class="navBtn" src="images/header/navBtn.svg">
+                <div class="myLinks">
+                    <a href="#mainMap">À la carte</a>
+                    <a href="wijnkaart.html">Wijnkaart</a>
+                    <a href="#">Lunchmenu</a>
+                    <a href="#contacts">Contact</a>
+                </div>
             </div>
+            <form id="form" class="registration" action="#">
+                <div class="registration__container">
+                    <div class="header__form">
+                        <h4>Reserve a table</h4>
+                        <button class="close">X</button>
+                    </div>
+                    <p>Por favor, preencha este formulário para reservar uma mesa.</p>
+                    <hr>
+                    <label><b>Data</b></label>
+                    <input class="_req" type="date" placeholder="Digite a data desejada" name="data" required>
 
-        </div>
+                    <label><b>Tempo</b></label>
+                    <input class="_req" type="time" placeholder="Digite o tempo desejado" min="06:00" max="21:00"
+                           name="tempo" required>
 
+                    <label><b>Número de pessoas</b></label>
+                    <input class="_req" type="number" placeholder="Digite o número de convidados" name="numero"
+                           required>
+                    <hr>
 
-        <form id="form" class="registration" action="#">
-            <div class="registration__container">
-                <div class="header__form">
-                    <h4>Reserve a table</h4>
-                    <button class="close">X</button>
+                    <p>A bad day with lunch is better than a good day without it.</p>
+                    <button type="submit" class="registerbtn">enviar</button>
                 </div>
 
-                <p>Por favor, preencha este formulário para reservar uma mesa.</p>
-                <hr>
-
-                <label><b>Data</b></label>
-                <input class="_req" type="text" placeholder="Digite a data desejada" name="data" required>
-
-                <label><b>Tempo
-                </b></label>
-                <input class="_req" type="text" placeholder="Digite o tempo desejado" name="tempo" required>
-
-                <label><b>Número de pessoas</b></label>
-                <input class="_req" type="text" placeholder="Digite o número de convidados" name="numero" required>
-                <hr>
-
-                <p>A bad day with lunch is better than a good day without it.</p>
-                <button type="submit" class="registerbtn">enviar</button>
+            </form>
+            <div class="menu-phone">
+                <img class="menu-phone_image" src="images/header/phoneIcon.png" alt="phone">
+                <a href="tel:+3292825725"><p>+32 9 282 57 25</p></a>
             </div>
-
-        </form>
-        <div class="menu-phone">
-            <img class="menu-phone_image" src="images/header/phoneIcon.png" alt="phone">
-            <a href="#"><p>+32 9 282 57 25</p></a>
-        </div>
-    </menu>
-    <div class="container content">
-        <h3>OPEN EVERYDAY 6AM - 9PM</h3>
-        <h1 class="slogan">A bad day with lunch is better than a good day without it.</h1>
-        <div class="btns">
-            <button class="reserve">Reserve a table</button>
-            <div class="btns__social">
-                <button class="social">Fb</button>
-                <button class="social">Ig</button>
-                <button class="social">Tw</button>
-                <button class="social">Yt</button>
+        </menu>
+        <div class="container content">
+            <h3>OPEN EVERYDAY 6AM - 9PM</h3>
+            <h1 class="slogan">A bad day with lunch is better than a good day without it.</h1>
+            <div class="btns">
+                <button class="reserve">Reserve a table</button>
+                <div class="btns__social">
+                    <a href="https://ru.wikipedia.org/wiki/FB" class="social" target="_blank">Fb</a>
+                    <a href="https://ru.wikipedia.org/wiki/Instagram" class="social" target="_blank">Ig</a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80" class="social" target="_blank">Tw</a>
+                    <a href="https://ru.wikipedia.org/wiki/YouTube" class="social" target="_blank">Yt</a>
+                </div>
             </div>
         </div>
     </div>
+
 </header>
+<a href="#upMenu">
+    <img class="up__arrow" src="images/icon/up-arrow.svg" alt="up arrow">
+</a>
 <main>
     <section class="menu container">
+
         <div class="menu-block__left">
-            <ul>
+            <ul class="menu-block__left-list">
                 <li>
                     <h3>Woensdag 12/01</h3>
                     <div class="menu-left__desc">
@@ -160,14 +158,14 @@
             </ul>
         </div>
         <div class="menu-block__right">
-            <img class="menu-left" src="images/secondPage/leftImage.jpg" alt="photo">
+            <div class="menu-left"></div>
             <div class="menu-rectangle"></div>
-            <img class="menu-right" src="images/secondPage/rightImage.jpg" alt="photo">
+            <div class="menu-right"></div>
         </div>
     </section>
-
     <section class="descriptionPage">
         <div class="container">
+
             <img class="quotes" src="images/thirdPage/quotes.png" alt="''">
 
 
@@ -224,10 +222,10 @@
                         onze
                         filosofie, goed eten in een goede sfeer.</p>
                 </div>
-                <img src="images/descriptionDishes/rightDescription.jpg" alt="photo">
+                <img class="descriptionDishes__image" src="images/descriptionDishes/rightDescription.jpg" alt="photo">
             </div>
             <div class="descriptionDishes__sfeer">
-                <img src="images/descriptionDishes/leftDescription.jpg" alt="photo">
+                <img class="descriptionDishes__image " src="images/descriptionDishes/leftDescription.jpg" alt="photo">
                 <div class="descriptionDishes__text">
                     <h2 class="descriptionDishes__title">TOFFE AMBIANCE</h2>
                     <hr>
@@ -245,7 +243,8 @@
                         een goed
                         gesprek en lekker eten.</p>
                 </div>
-                <img src="images/descriptionDishes/rightBottmDescription.jpg" alt="photo">
+                <img class="descriptionDishes__image " src="images/descriptionDishes/rightBottmDescription.jpg"
+                     alt="photo">
             </div>
         </div>
     </section>
@@ -262,16 +261,29 @@
                     <div class=" swiper-wrapper">
                         <div class="swiper-slide">
 
-                            <img src="images/slaiderPage/firstImage.svg" class="swiper-slider__section" alt="photo">
+                            <img src="images/slaiderPage/firstImage.jpg" class="swiper-slider__section" alt="photo">
                         </div>
                         <div class="swiper-slide">
 
-                            <img src="images/slaiderPage/midlImage-4%201.svg" class="swiper-slider__section"
+                            <img src="images/slaiderPage/midlImage.jpg" class="swiper-slider__section"
                                  alt="photo">
                         </div>
                         <div class="swiper-slide">
 
-                            <img src="images/slaiderPage/thirdImage.svg" class="swiper-slider__section" alt="photo">
+                            <img src="images/slaiderPage/thirdImage.jpg" class="swiper-slider__section" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slaiderPage/firstImage.jpg" class="swiper-slider__section" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slaiderPage/midlImage.jpg" class="swiper-slider__section"
+                                 alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slaiderPage/thirdImage.jpg" class="swiper-slider__section" alt="photo">
                         </div>
                     </div>
 
@@ -282,17 +294,18 @@
     </section>
 
 </main>
+
 <footer>
 
     <section class="contacts">
         <div class="container ">
             <div class="footer__contacts__top">
-                <div class="contacts__list">
+                <div id="contacts" class="contacts__list">
                     <h2>Contacts</h2>
                     <ul>
                         <li>
                             <div class="footer__list__img">
-                                <img src="images/footer/phone.svg" alt="photo">
+                                <a href="tel:+3292825725"><img src="images/footer/phone.svg" alt="photo"></a>
                             </div>
                             <div class="footer__list__text">
                                 <p>Phone Number</p>
@@ -302,7 +315,7 @@
                         <li>
                             <div class="footer__list__img">
 
-                                <img src="images/footer/email.svg" alt="photo">
+                                <a href="mailto:info@email.com"><img src="images/footer/email.svg" alt="photo"></a>
                             </div>
                             <div class="footer__list__text">
                                 <p>Email</p>
@@ -326,28 +339,31 @@
                             </div>
                             <div class="footer__list__text">
                                 <p>Map Street</p>
-                                <h3>Jl. Raya Surabaya 2787</h3>
+                                <h3>Moscow, Presnenskaya embankment, 2</h3>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="contacts__form"><h2>have any questions?</h2>
-                    <form action="">
+                    <form action="#" method="post" name="f1" enctype="multipart/form-data"
+                          onsubmit="sendEmailTelegram(event)">
+
+
                         <div class="footer__form-top">
                             <div class="footer__top__input">
-                                <label>Name</label>
-                                <input type="text" placeholder="Input your name">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" placeholder="Input your name" name="name1">
                             </div>
                             <div class="footer__top__input">
                                 <label>Email</label>
-                                <input type="text" placeholder="Input your email">
+                                <input type="email" placeholder="Input your email" name="email1">
                             </div>
                         </div>
                         <div class="footer__form__bottom">
                             <label>Speciale Request</label>
-                            <textarea type="text" placeholder="Input your special request"></textarea>
+                            <textarea type="text" placeholder="Input your special request" name="textar"></textarea>
                         </div>
-                        <button type="submit">Send</button>
+                        <button type="submit" name="sab">Send</button>
                     </form>
                 </div>
             </div>
@@ -355,8 +371,18 @@
         </div>
     </section>
     <section class="map">
-        <div class="container">
-            <img src="images/footer/map.jpg" alt="">
+        <div id="mainMap" class="container">
+            <div >
+                <a href="https://yandex.ru/maps/org/soho_dolce/207798956396/?utm_medium=mapframe&utm_source=maps"
+                   style="color:#eee;font-size:12px;top:0px;">Soho Dolce</a>
+                <a href="https://yandex.ru/maps/213/moscow/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps"
+                   style="color:#eee;font-size:12px;">Кафе в Москве</a>
+                <!--                <a href="https://yandex.ru/maps/213/moscow/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Ресторан в Москве</a>-->
+                <iframe class="map__yandex"
+                        src="https://yandex.ru/map-widget/v1/?indoorLevel=2&ll=37.540457%2C55.748861&mode=poi&poi%5Bpoint%5D=37.539725%2C55.749287&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D207798956396&z=18.38"
+                        frameborder="1" allowfullscreen="true"></iframe>
+            </div>
+
         </div>
 
     </section>
@@ -364,14 +390,15 @@
 
         <div class="container">
             <div class="footer__social__menu">
-                <div class="footer__logo">
+                <a href="#" class="footer__logo">
                     <img src="images/footer/logoBlack.png" alt="logo">
-                </div>
+                </a>
                 <div class="btns__footer__social">
-                    <button class="btn__footer__social">Fb</button>
-                    <button class="btn__footer__social">Ig</button>
-                    <button class="btn__footer__social">Tw</button>
-                    <button class="btn__footer__social">Yt</button>
+                    <a class="btn__footer__social" href="https://ru.wikipedia.org/wiki/FB" target="_blank">Fb</a>
+                    <a class="btn__footer__social" href="https://ru.wikipedia.org/wiki/Instagram" target="_blank">Ig</a>
+                    <a class="btn__footer__social"
+                       href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80" target="_blank">Tw</a>
+                    <a class="btn__footer__social" href="https://ru.wikipedia.org/wiki/YouTube" target="_blank">Yt</a>
                 </div>
             </div>
         </div>
@@ -384,10 +411,11 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="index.js"></script>
+<script src="mainJS/index.js"></script>
+<script src="mainJS/menuImages.js"></script>
+<script src="mainJS/form.js"></script>
 <script>
-
-     document.querySelector(".navBtn").addEventListener("click", myFunction);
+    document.querySelector(".navBtn").addEventListener("click", myFunction);
 
     function myFunction() {
         let menuHeader = document.querySelector(".menu__header");
