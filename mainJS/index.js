@@ -55,7 +55,7 @@ window.addEventListener('scroll', function(e) {
 });
 
 
-//анимация картинок попадающих в область видимости
+//анимация картинок попадающих в область видимости.
 let images = document.querySelectorAll(".descriptionDishes__image")
 console.log(images)
 const observer = new IntersectionObserver(entries => {
